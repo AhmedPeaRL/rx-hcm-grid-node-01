@@ -33,11 +33,15 @@ jobs:
         echo "Seed reference: RX-HCM Node-01" >> $filepath
 
         echo "filename=$filename" >> $GITHUB_OUTPUT
-
+        
+    - name: Pull latest before pushing
+      run:  git pull --rebase
+     
     - name: Commit Microstream
       run: |
         git config --local user.name "AhmedPeaRL"
         git config --local user.email "blackpearl88622@gmail.com"
+        git pull --rebase
         git add microstreams/
         git commit -m "Add microstream: ${{ steps.gen.outputs.filename }}" || true
         git push
