@@ -1,0 +1,45 @@
+name: Generate Content Map
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"    # كل 6 ساعات
+  workflow_dispatch:
+
+jobs:
+  build-map:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Build Content Map
+      run: |
+        echo "{" > content-map.json
+        echo '  "node": "rx-hcm-grid-node-01",' >> content-map.json
+        echo '  "generated_at": "'$(date)'",' >> content-map.json
+        echo '  "streams": [' >> content-map.json
+
+        batch_count=0
+        for file in streams/*.txt; do
+          count=$(wc -l < "$file")
+          name=$(basename "$file")
+          
+          if [ $batch_count -gt 0 ]; then
+            echo "," >> content-map.json
+          fi
+
+          echo '    {"batch": "'$name'", "lines": '$count'}' >> content-map.json
+          batch_count=$((batch_count+1))
+        done
+
+        echo '  ]' >> content-map.json
+        echo "}" >> content-map.json
+
+    - name: Commit Map
+      run: |
+        git config --local user.name "AhmedPeaRL"
+        git config --local user.email "blackpearl88622@gmail.com"
+        git add content-map.json
+        git commit -m "Auto-generate content map" || true
+        git push
