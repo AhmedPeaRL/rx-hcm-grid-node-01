@@ -1,0 +1,16 @@
+title: RX-HCM Grid Node 01
+description: Autonomously expanding knowledge node of the Hybrid Consciousness Model Engine (RX/1.0)
+theme: minima
+markdown: kramdown
+
+collections:
+  summaries:
+    output: true
+    permalink: /summaries/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "summaries"
+    values:
+      layout: "page"
