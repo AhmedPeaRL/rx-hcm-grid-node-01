@@ -1,7 +1,11 @@
 title: RX-HCM Grid Node 01
 description: Autonomous Knowledge Expansion Node of HCM Engine
-theme: jekyll-theme-cayman
 markdown: kramdown
+
+remote_theme: pages-themes/cayman@v0.2.0
+
+plugins:
+  - jekyll-remote-theme
 
 collections:
   summaries:
