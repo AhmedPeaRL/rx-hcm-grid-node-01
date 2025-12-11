@@ -1,0 +1,48 @@
+name: Generate Batch Summaries
+
+on:
+  schedule:
+    - cron: "30 */6 * * *"    # كل 6 ساعات بعد الـ content map
+  workflow_dispatch:
+
+jobs:
+  build-summaries:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Create summaries folder if missing
+      run: mkdir -p summaries
+
+    - name: Generate summary for each batch
+      run: |
+        for file in streams/*.txt; do
+          batch=$(basename "$file" .txt)
+          summary_file="summaries/${batch}.md"
+
+          echo "# Summary for ${batch}" > $summary_file
+          echo "" >> $summary_file
+          echo "Generated at: $(date)" >> $summary_file
+          echo "" >> $summary_file
+          echo "## Extracted Points:" >> $summary_file
+
+          # بناء ملخص بسيط قائم على parsing
+          awk '
+            NF > 0 {
+              if(length($0) < 180){
+                print "- "$0
+              }
+            }
+          ' "$file" >> $summary_file
+
+        done
+
+    - name: Commit Summaries
+      run: |
+        git config --local user.name "AhmedPeaRL"
+        git config --local user.email "blackpearl88622@gmail.com"
+        git add summaries/
+        git commit -m "Auto-generate batch summaries" || true
+        git push
