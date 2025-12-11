@@ -7,3 +7,6 @@ collections:
   summaries:
     output: true
     permalink: /summaries/:name
+  microstreams:
+    output: true
+    permalink: /microstreams/:name
