@@ -1,35 +1,26 @@
-name: Build and Deploy GitHub Pages
+name: Build & Deploy GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
-
-      - name: Generate Microstream
-        run: ruby scripts/generate_microstream.rb
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
+        uses: actions/upload-pages-artifact@v2
 
   deploy:
     needs: build
@@ -37,6 +28,11 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        id: deployment
+        uses: actions/deploy-pages@v2
