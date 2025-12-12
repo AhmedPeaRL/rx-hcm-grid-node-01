@@ -21,7 +21,7 @@ require "time"   # ← FIX: ensures Time#iso8601 is available in GitHub Actions
 # ----------------------------------------------------------
 PROJECT_ROOT = File.expand_path(File.join(__dir__, ".."))
 CLUSTERS_DIR = File.join(PROJECT_ROOT, "clusters")
-CLUSTER_MAP  = File.join(CLUSTERS_DIR, "cluster-map.json")
+CLUSTER_MAP  = File.join(CLUSTERS_DIR, "cluster_map.json")
 
 # ----------------------------------------------------------
 # Parse arguments
