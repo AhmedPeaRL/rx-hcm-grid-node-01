@@ -4,7 +4,10 @@ on:
   schedule:
     - cron: "*/45 * * * *"   # كل 45 دقيقة — نبضة قصيرة
   workflow_dispatch:
-
+  
+permissions:
+  contents: write
+  
 jobs:
   build-microstream:
     runs-on: ubuntu-latest
