@@ -6,6 +6,7 @@
 require 'json'
 require 'optparse'
 require 'fileutils'
+require 'time'
 
 # ---- options
 options = { k: 8, max_iter: 30 }
@@ -196,7 +197,7 @@ end
 
 # write index map
 map = {
-  generated_at: Time.now.utc.iso8601,
+  generated_at: Time.now.utc.iso8601 rescue Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
   k: k,
   clusters: clusters.each_with_index.map { |cl, i|
     {
