@@ -42,4 +42,5 @@ jobs:
           git config --local user.name "AhmedPeaRL"
           git config --local user.email "blackpearl88622@gmail.com"
           git add clusters/
+          git pull --rebase origin main || true
           git diff --staged --quiet || (git commit -m "Auto-generate clusters (C-Engine) [k=8]" && git push)
