@@ -1,4 +1,9 @@
 ---
+layout: default
+title: RX-HCM Node-01
+---
+
+---
 title: RX-HCM Grid Node-01
 layout: default
 ---
