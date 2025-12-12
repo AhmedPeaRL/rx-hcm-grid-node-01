@@ -1,0 +1,63 @@
+{
+  "generated_at": "2025-12-12T22:31:26Z",
+  "engine": "Dynamic C-Engine",
+  "cluster_count": 8,
+  "clusters": [
+    {
+      "id": 1,
+      "label": "C-1",
+      "weight": 0.60388,
+      "entropy": 0.98702,
+      "timestamp": "2025-12-12T22:31:26Z"
+    },
+    {
+      "id": 2,
+      "label": "C-2",
+      "weight": 0.70785,
+      "entropy": 0.91257,
+      "timestamp": "2025-12-12T22:31:26Z"
+    },
+    {
+      "id": 3,
+      "label": "C-3",
+      "weight": 0.02139,
+      "entropy": 0.87237,
+      "timestamp": "2025-12-12T22:31:26Z"
+    },
+    {
+      "id": 4,
+      "label": "C-4",
+      "weight": 0.99135,
+      "entropy": 0.6483,
+      "timestamp": "2025-12-12T22:31:26Z"
+    },
+    {
+      "id": 5,
+      "label": "C-5",
+      "weight": 0.77232,
+      "entropy": 0.77141,
+      "timestamp": "2025-12-12T22:31:26Z"
+    },
+    {
+      "id": 6,
+      "label": "C-6",
+      "weight": 0.32282,
+      "entropy": 0.97753,
+      "timestamp": "2025-12-12T22:31:26Z"
+    },
+    {
+      "id": 7,
+      "label": "C-7",
+      "weight": 0.76015,
+      "entropy": 0.68066,
+      "timestamp": "2025-12-12T22:31:26Z"
+    },
+    {
+      "id": 8,
+      "label": "C-8",
+      "weight": 0.58268,
+      "entropy": 0.66506,
+      "timestamp": "2025-12-12T22:31:26Z"
+    }
+  ]
+}
