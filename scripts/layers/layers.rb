@@ -7,7 +7,7 @@ SEED = Time.now.to_i % 997 # ثابت تخميني لعدم تكرار النت�
 srand(SEED)
 
 # === Input: cluster-map.json must exist ===
-cluster_map = JSON.parse(File.read("cluster-map.json"))
+cluster_map = JSON.parse(File.read("cluster_map.json"))
 clusters = cluster_map["clusters"]
 
 timestamp = Time.now.utc.iso8601
