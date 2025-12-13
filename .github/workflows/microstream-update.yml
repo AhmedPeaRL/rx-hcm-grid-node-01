@@ -7,25 +7,32 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   update-streams:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
+      - name: Checkout Repo
+        uses: actions/checkout@v3
 
-    - name: Update Streams
-      run: |
-        echo "auto update $(date)" >> streams-seed-01.txt
+      - name: Update Streams (silent)
+        run: |
+          if [ ! -f streams-seed-01.txt ]; then
+            echo "initialized $(date -u)" > streams-seed-01.txt
+          fi
 
-    - name: Configure Git
-      run: |
-        git config --local user.name "AhmedPeaRL"
-        git config --local user.email "blackpearl88622@gmail.com"
+      - name: Configure Git
+        run: |
+          git config --local user.name "AhmedPeaRL"
+          git config --local user.email "blackpearl88622@gmail.com"
 
-    - name: Commit Changes
-      run: |
-        git add .
-        git commit -m "Auto update microstream batch" || true
-        git push
+      - name: Commit Changes if any
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "microstream: silent state update"
+            git push
+          else
+            echo "No changes. Stream remains quiet."
+          fi
