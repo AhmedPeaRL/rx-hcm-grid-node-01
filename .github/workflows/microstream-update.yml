@@ -2,7 +2,7 @@ name: Microstream Auto Update
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # كل 12 ساعة
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
