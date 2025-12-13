@@ -26,7 +26,6 @@ jobs:
 
     - name: Commit Changes
       run: |
-        git pull --rebase
         git add .
         git commit -m "Auto update microstream batch" || true
         git push
