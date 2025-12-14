@@ -43,7 +43,7 @@ The node generates automated microstreams every cycle.
 The system automatically builds a high-level content index that reflects  
 the current state of streams, seeds, and expansions.
 
-👉 **[View Content Map](./content-map.json/)**
+👉 **[View Content Map](/content-map.json)**
 
 ---
 
@@ -58,7 +58,7 @@ Generated every 6 hours to keep the node’s semantic layers organized.
 This file defines the identity, intent, constraints, and transformation rules  
 that govern the node’s autonomous behavior.
 
-👉 [Resonance Profile](./resonance/resonance-profile-01.md/)
+👉 [Resonance Profile](./resonance/resonance-profile-01/)
 
 ---
 
