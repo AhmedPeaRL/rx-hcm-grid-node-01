@@ -1,3 +1,8 @@
+---
+layout: default
+title: Node Resonance Profile 01
+---
+
 RX/1.0 – Resonance Profile (Content Strategy DNA)
 
 Version: 1.0
