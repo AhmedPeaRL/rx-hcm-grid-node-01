@@ -58,7 +58,7 @@ Generated every 6 hours to keep the node’s semantic layers organized.
 This file defines the identity, intent, constraints, and transformation rules  
 that govern the node’s autonomous behavior.
 
-👉 **[Resonance Profile](./resonance/resonance-profile-01.md)**
+👉 [Resonance Profile](./resonance/resonance-profile-01/)
 
 ---
 
