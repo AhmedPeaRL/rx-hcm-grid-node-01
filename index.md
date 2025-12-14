@@ -50,7 +50,7 @@ the current state of streams, seeds, and expansions.
 ## 🔷 Batch Summaries
 Generated every 6 hours to keep the node’s semantic layers organized.
 
-👉 **[Browse Summaries](rx-hcm-grid-node-01/summaries/)**
+👉 **[Browse Summaries](./summaries/)**
 
 ---
 
