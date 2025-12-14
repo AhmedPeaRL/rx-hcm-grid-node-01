@@ -1,125 +1,140 @@
 {
-  "generated_at": "2025-12-14T02:25:29Z",
+  "generated_at": "2025-12-14T12:54:07Z",
   "layers": [
     {
       "layer_id": 1,
-      "generated_at": "2025-12-14T02:25:29Z",
+      "generated_at": "2025-12-14T12:54:07Z",
       "connections": [
         {
-          "pair": "C-6-C-7",
-          "resonance": 0.455038,
-          "layer": 1
-        },
-        {
-          "pair": "C-1-C-2",
-          "resonance": 0.237742,
-          "layer": 1
-        },
-        {
-          "pair": "C-4-C-8",
-          "resonance": 0.166814,
-          "layer": 1
-        },
-        {
-          "pair": "C-3-C-7",
-          "resonance": 0.48811,
-          "layer": 1
-        },
-        {
-          "pair": "C-2-C-8",
-          "resonance": 0.27883,
-          "layer": 1
-        },
-        {
-          "pair": "C-6-C-8",
-          "resonance": 0.525631,
+          "pair": "C-2-C-7",
+          "resonance": 0.179632,
           "layer": 1
         },
         {
           "pair": "C-5-C-7",
-          "resonance": 0.194198,
+          "resonance": 0.203655,
           "layer": 1
         },
         {
-          "pair": "C-3-C-5",
-          "resonance": 0.636842,
+          "pair": "C-5-C-6",
+          "resonance": 0.528828,
           "layer": 1
         },
         {
-          "pair": "C-7-C-8",
-          "resonance": 0.188718,
+          "pair": "C-4-C-8",
+          "resonance": 0.184367,
           "layer": 1
         },
         {
-          "pair": "C-5-C-8",
-          "resonance": 0.316232,
+          "pair": "C-4-C-6",
+          "resonance": 0.420317,
+          "layer": 1
+        },
+        {
+          "pair": "C-1-C-2",
+          "resonance": 0.249559,
+          "layer": 1
+        },
+        {
+          "pair": "C-1-C-3",
+          "resonance": 0.624335,
           "layer": 1
         }
       ]
     },
     {
       "layer_id": 2,
-      "generated_at": "2025-12-14T02:25:29Z",
+      "generated_at": "2025-12-14T12:54:07Z",
       "connections": [
         {
-          "pair": "C-4-C-5",
-          "resonance": 0.18455,
-          "layer": 2
-        },
-        {
-          "pair": "C-1-C-6",
-          "resonance": 0.607147,
-          "layer": 2
-        },
-        {
-          "pair": "C-2-C-5",
-          "resonance": 0.29719,
+          "pair": "C-2-C-6",
+          "resonance": 0.539701,
           "layer": 2
         },
         {
           "pair": "C-6-C-7",
-          "resonance": 0.461157,
+          "resonance": 0.387977,
           "layer": 2
         },
         {
-          "pair": "C-2-C-7",
-          "resonance": 0.160567,
+          "pair": "C-1-C-8",
+          "resonance": 0.266386,
           "layer": 2
         },
         {
-          "pair": "C-3-C-8",
-          "resonance": 0.607326,
+          "pair": "C-3-C-7",
+          "resonance": 0.438638,
           "layer": 2
         },
         {
-          "pair": "C-1-C-7",
-          "resonance": 0.175447,
+          "pair": "C-4-C-5",
+          "resonance": 0.196966,
+          "layer": 2
+        },
+        {
+          "pair": "C-3-C-6",
+          "resonance": 0.770743,
+          "layer": 2
+        },
+        {
+          "pair": "C-2-C-8",
+          "resonance": 0.321261,
+          "layer": 2
+        },
+        {
+          "pair": "C-1-C-5",
+          "resonance": 0.317606,
+          "layer": 2
+        },
+        {
+          "pair": "C-1-C-2",
+          "resonance": 0.256294,
           "layer": 2
         }
       ]
     },
     {
       "layer_id": 3,
-      "generated_at": "2025-12-14T02:25:29Z",
+      "generated_at": "2025-12-14T12:54:07Z",
       "connections": [
         {
-          "pair": "C-3-C-6",
-          "resonance": 0.87508,
+          "pair": "C-5-C-8",
+          "resonance": 0.342425,
           "layer": 3
         },
         {
-          "pair": "C-3-C-5",
-          "resonance": 0.651452,
+          "pair": "C-2-C-7",
+          "resonance": 0.167342,
           "layer": 3
         },
         {
-          "pair": "C-4-C-6",
-          "resonance": 0.351732,
+          "pair": "C-7-C-8",
+          "resonance": 0.191515,
+          "layer": 3
+        },
+        {
+          "pair": "C-5-C-7",
+          "resonance": 0.201408,
+          "layer": 3
+        },
+        {
+          "pair": "C-5-C-6",
+          "resonance": 0.666421,
+          "layer": 3
+        },
+        {
+          "pair": "C-1-C-2",
+          "resonance": 0.271252,
           "layer": 3
         },
         {
           "pair": "C-3-C-4",
-          "resonance": 0.397084,
+          "resonance": 0.395868,
+          "layer": 3
+        },
+        {
+          "pair": "C-3-C-8",
+          "resonance": 0.485252,
           "layer": 3
         }
       ]
