@@ -58,14 +58,14 @@ Generated every 6 hours to keep the node’s semantic layers organized.
 This file defines the identity, intent, constraints, and transformation rules  
 that govern the node’s autonomous behavior.
 
-👉 [Resonance Profile](rx-hcm-grid-node-01/resonance/resonance-profile-01/)
+👉 [Resonance Profile](./resonance/resonance-profile-01.md/)
 
 ---
 
 ## 🔷 Root Seed (Origin Point)
 The foundational semantic seed for Node-01.
 
-👉 **[Stream Seed](rx-hcm-grid-node-01/streams-seeds-01.txt)**
+👉 **[Stream Seed](rx-hcm-grid-node-01/streams-seed-01.txt)**
 
 ---
 
