@@ -65,7 +65,7 @@ that govern the node’s autonomous behavior.
 ## 🔷 Root Seed (Origin Point)
 The foundational semantic seed for Node-01.
 
-👉 **[Stream Seed](rx-hcm-grid-node-01/streams-seed-01.txt)**
+👉 **[Stream Seed](./streams-seed-01.txt)**
 
 ---
 
