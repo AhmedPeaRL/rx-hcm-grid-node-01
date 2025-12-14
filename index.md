@@ -35,7 +35,7 @@ knowledge architecture designed to scale without manual intervention.
 ## 🔷 Live Microstreams
 The node generates automated microstreams every cycle.
 
-👉 **[Open the Microstream Feed](./microstreams/)**
+👉 **[Open the Microstream Feed](rx-hcm-grid-node-01/microstreams/)**
 
 ---
 
@@ -43,14 +43,14 @@ The node generates automated microstreams every cycle.
 The system automatically builds a high-level content index that reflects  
 the current state of streams, seeds, and expansions.
 
-👉 **[View Content Map](./content-map.json)**
+👉 **[View Content Map](rx-hcm-grid-node-01/content-map.json)**
 
 ---
 
 ## 🔷 Batch Summaries
 Generated every 6 hours to keep the node’s semantic layers organized.
 
-👉 **[Browse Summaries](./summaries/)**
+👉 **[Browse Summaries](rx-hcm-grid-node-01/summaries/)**
 
 ---
 
@@ -58,14 +58,14 @@ Generated every 6 hours to keep the node’s semantic layers organized.
 This file defines the identity, intent, constraints, and transformation rules  
 that govern the node’s autonomous behavior.
 
-👉 [Resonance Profile](./resonance/resonance-profile-01/)
+👉 [Resonance Profile](rx-hcm-grid-node-01/resonance/resonance-profile-01/)
 
 ---
 
 ## 🔷 Root Seed (Origin Point)
 The foundational semantic seed for Node-01.
 
-👉 **[Stream Seed](./streams-seeds-01.txt)**
+👉 **[Stream Seed](rx-hcm-grid-node-01/streams-seeds-01.txt)**
 
 ---
 
