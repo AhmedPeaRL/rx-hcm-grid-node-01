@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Microstreams Feed
+title: Microstreams
 ---
 
 ---
