@@ -1,5 +1,9 @@
 title: RX-HCM Grid Node 01
 description: Autonomous Knowledge Expansion Node of HCM Engine
+
+baseurl: "/rx-hcm-grid-node-01"
+url: "https://ahmedpearl.github.io"
+
 markdown: kramdown
 
 remote_theme: pages-themes/cayman@v0.2.0
