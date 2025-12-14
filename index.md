@@ -35,7 +35,7 @@ knowledge architecture designed to scale without manual intervention.
 ## 🔷 Live Microstreams
 The node generates automated microstreams every cycle.
 
-👉 **[Open the Microstream Feed](rx-hcm-grid-node-01/microstreams/)**
+👉 **[Open the Microstream Feed](./microstreams/)**
 
 ---
 
