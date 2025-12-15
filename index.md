@@ -89,6 +89,4 @@ with external tooling, research modules, and AI-assisted workflows.
 
 ---
 
-## 👉 [Node Mirror](./node-mirror.md/)
-
 **RX-HCM Grid — Where knowledge grows as a living system.**
